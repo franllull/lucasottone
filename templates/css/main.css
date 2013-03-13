@@ -1,0 +1,58 @@
+@font-face {font-family: 'HalisGR-Light';src: url('../webfonts/26301D_1_0.eot');src: url('../webfonts/26301D_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26301D_1_0.woff') format('woff'),url('../webfonts/26301D_1_0.ttf') format('truetype');}
+@font-face {font-family: 'HalisGR-Book';src: url('../webfonts/26301D_6_0.eot');src: url('../webfonts/26301D_6_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26301D_6_0.woff') format('woff'),url('../webfonts/26301D_6_0.ttf') format('truetype');}
+@font-face {font-family: 'HalisGR-Bold';src: url('../webfonts/26301D_4_0.eot');src: url('../webfonts/26301D_4_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26301D_4_0.woff') format('woff'),url('../webfonts/26301D_4_0.ttf') format('truetype');}
+@font-face {font-family: 'HalisGR-Regular';src: url('../webfonts/26301D_B_0.eot');src: url('../webfonts/26301D_B_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/26301D_B_0.woff') format('woff'),url('../webfonts/26301D_B_0.ttf') format('truetype');}
+
+/* =================== general =================== */
+html {height: 100%; -webkit-font-smoothing: antialiased;font-smoothing: antialiased;}
+body {height: 100%; font-family: 'HalisGR-Book', Helvetica, sans-serif;font-size: 16px; color: #999;}
+	h1 {font-size: 24px;font-weight: 400; margin: 17px 0; line-height: 24px; min-height: 24px; font-family: 'HalisGR-Light', Helvetica, sans-serif;}
+	a {text-decoration: none; color: #999; margin-bottom: 5px;}
+	strong { font-family: 'HalisGR-Bold', helvetica, sans-serif; font-weight: bold;}
+	ul {padding-left: 0px;}
+	.through {text-decoration: line-through;}
+
+/* =================== layout =================== */
+header {position: fixed; padding: 30px 30px 0 30px; height: 100%; width: 200px; background: #fff; text-align: right; opacity: 0.95; border-right: 1px solid #eee; z-index: 100; text-transform: uppercase;}
+	header a {display: block;} header nav a:hover {text-decoration: line-through;} header a.menu-link {display: none;}
+
+section {padding: 30px 30px 0 30px; max-height: 660px; height: 94%; width: 11000px; margin-left: 260px; max-height: 600px;}
+
+	/* -- specific widths, if you find a way to make it auto franllull@gmail.com-- */
+	section img {display: inline; margin-right: 30px; min-height: 180px; max-height: 100%; max-width: 100%;opacity: 0; -moz-transition: opacity 2s; -webkit-transition: opacity 2s; -o-transition: opacity 2s; transition: opacity 2s;}
+	section .nextsection {display: inline-block; margin-right: 30px; vertical-align: top; margin-top: 250px; width: 70px; font-family: "HalisGR-Light", Helvetica, sans-serif; color: #ccc; font-size: 20px; text-transform: uppercase; line-height: 25px; height: 55px; background: url("../img/point.svg") 0 43px no-repeat; opacity: .3; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;-ms-transition: all .3s ease-out;-o-transition: all .3s ease-out;transition: all .3s ease-out;}
+	section .nextsection:hover {opacity: 1; height: 130px;}
+	section.index {width: 8300px;}
+	section.portrait {width: 7570px;}
+	section.intimate {width: 6050px;}
+	section.diaries {width: 10800px;}
+	section.contact {width: auto; padding: 30px 0 0 30px;}
+	.contactinfo {max-width: 500px; min-width: 260px;} 
+	.contactinfo p {margin: 0!important;}
+		.contactinfo a {color: #444; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;-ms-transition: all .3s ease-out;-o-transition: all .3s ease-out;transition: all .3s ease-out;} .contactinfo a:hover {opacity: .6;}
+		.contactinfo span {display: block; padding: 12px; border-bottom: 1px solid #eee;}
+
+/* =================== tablets =================== */
+@media (max-width:1024px) {header {width: 110px; padding: 30px 20px 0 20px;text-align: left;}section {margin-left:150px;} section.contact {padding: 30px 10% 0 10%;}}
+
+/* =================== smartphones =================== */
+@media (max-width:480px) {
+
+	header {width:80%; min-height: 58px; position:fixed; height: auto; padding: 0 10%; top:0px; background: #fff; border-bottom: 1px solid #eee; border-right: none; background: rgb(253, 253, 253); opacity: .98;}
+		header h1 {float:right;}
+			header h1 a {margin: 0;}
+		header a.menu-link {float: left;display: block; height: 32px; width: 32px; background: url("../img/nav.svg") center no-repeat; margin: 12px 0;}
+		header a.menu-link span {display: none;}
+		header nav[role=navigation] ul {margin: 0;padding: 0;border-top: 4px solid #ddd; border-bottom: 4px solid #ddd;}
+		header nav[role=navigation] a {display: block; background:rgb(252, 252, 252); width: 100%; padding: 10px 0px; margin-bottom: 0; text-align: center;border-bottom: 1px solid #FFFFFF;border-top: 1px solid #ddd;}
+		header nav[role=navigation] a:hover, header nav[role=navigation] a:focus {background-color: #f1f1f1;}
+		header nav[role=navigation] {clear: both; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;-ms-transition: all .3s ease-out;-o-transition: all .3s ease-out;transition: all .3s ease-out;} 
+		header nav[role=navigation].active {max-height: 19em;} .js nav[role=navigation] {overflow: hidden;max-height: 0;}
+	section {width: 80%!important; margin: 0; margin-top: 89px; padding: 0 10%;}
+	section.contact {width: auto; padding: 1px 10% 0 10%;}
+		section img {display: block; margin-top:30px; min-height: 50px; max-height: 600px;}
+		section .nextsection {display: block; position: relative; top: 20px; text-align: center; margin: 0 auto; width: 60%; background:none;} section .nextsection:hover {opacity: 1; height: 55px;}
+}
+
+/* =================== applying top padding in case of big monitor =================== */
+@media all and (min-height: 850px) and (min-width: 800px) {header {padding: 100px 30px 0 30px;}section {padding: 100px 30px 0 30px;} section.contact {width: auto; padding: 100px 0 0 30px;}}
