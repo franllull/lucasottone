@@ -28,7 +28,7 @@ section {padding: 30px 30px 0 30px; max-height: 660px; height: 94%; width: 11000
 	section.intimate {width: 6050px;}
 	section.diaries {width: 10800px;}
 	section.contact {width: auto; padding: 30px 0 0 30px;}
-	.contactinfo {max-width: 500px; min-width: 260px;} 
+	.contactinfo {max-width: 820px; min-width: 260px;} 
 		.contactinfo .wuuh .face01{display: block; margin-top: 0; margin-bottom: 10px;} 
 		.contactinfo .wuuh:hover .face02{display: block; margin-top: 0; margin-bottom: 10px;}
 		.contactinfo .wuuh:hover .face01 {display: none;}
