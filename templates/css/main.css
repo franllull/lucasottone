@@ -28,7 +28,7 @@ section {padding: 30px 30px 0 30px; max-height: 660px; height: 94%; width: 11000
 	section.intimate {width: 6050px;}
 	section.diaries {width: 10800px;}
 	section.contact {width: auto; padding: 30px 0 0 30px;}
-	.contactinfo {max-width: 820px; min-width: 260px;} 
+	.contactinfo {max-width: 830px; min-width: 260px;} 
 		.contactinfo .wuuh .face01{display: block; margin-top: 0; margin-bottom: 10px;} 
 		.contactinfo .wuuh:hover .face02{display: block; margin-top: 0; margin-bottom: 10px;}
 		.contactinfo .wuuh:hover .face01 {display: none;}
@@ -43,9 +43,10 @@ section {padding: 30px 30px 0 30px; max-height: 660px; height: 94%; width: 11000
 @media (max-width:480px) {
 
 	header {width:80%; min-height: 58px; position:fixed; height: auto; padding: 0 10%; top:0px; background: #fff; border-bottom: 1px solid #eee; border-right: none; background: rgb(253, 253, 253); opacity: .98;}
-		header h1 {float:right;}
+		header h1 {float:left;}
 			header h1 a {margin: 0;}
-		header a.menu-link {float: left;display: block; height: 32px; width: 32px; background: url("../img/nav.svg") center no-repeat; margin: 12px 0;}
+		body.no-svg header a.menu-link {float: right;display: block; height: 32px; width: 32px; background: url("../img/nav.png") center no-repeat; margin: 12px 0;}
+		header a.menu-link {float: right;display: block; height: 32px; width: 32px; background: url("../img/nav.svg") center no-repeat; margin: 12px 0;}
 		header a.menu-link span {display: none;}
 		header nav[role=navigation] ul {margin: 0;padding: 0;border-top: 4px solid #ddd; border-bottom: 4px solid #ddd;}
 		header nav[role=navigation] a {display: block; background:rgb(252, 252, 252); width: 100%; padding: 10px 0px; margin-bottom: 0; text-align: center;border-bottom: 1px solid #FFFFFF;border-top: 1px solid #ddd;}
