@@ -23,10 +23,10 @@ section {padding: 30px 30px 0 30px; max-height: 660px; height: 94%; width: 11000
 	section img {display: inline; margin-right: 30px; min-height: 170px; max-height: 100%; max-width: 100%;opacity: 0; -moz-transition: opacity 2s; -webkit-transition: opacity 2s; -o-transition: opacity 2s; transition: opacity 2s;}
 	section .nextsection {display: inline-block; margin-right: 30px; vertical-align: top; margin-top: 250px; width: 70px; font-family: "HalisGR-Light", Helvetica, sans-serif; color: #999; font-size: 20px; text-transform: uppercase; line-height: 25px; height: 55px; background: url("../img/point.svg") 0 43px no-repeat; opacity: .3; -webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;-ms-transition: all .3s ease-out;-o-transition: all .3s ease-out;transition: all .3s ease-out;}
 	section .nextsection:hover {opacity: 1; height: 130px;}
-	section.index {width: 9270px;}
-	section.portrait {width: 7915px;}
-	section.intimate {width: 6050px;}
-	section.diaries {width: 10800px;}
+	section.index {width: 12550px;}
+	section.portrait {width: 8800px;}
+	section.intimate {width: 5600px;}
+	section.diaries {width: 11650px;}
 	section.contact {width: auto; padding: 30px 0 0 30px;}
 	.contactinfo {max-width: 830px; min-width: 260px;} 
 		.contactinfo .wuuh .face01{display: block; margin-top: 0; margin-bottom: 10px;} 
